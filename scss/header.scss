@@ -1,8 +1,198 @@
 @import "colors";
+@import "buttons";
 @import "mixin";
 
 /* @include flex; */
 
 .header {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 20px;
+    z-index: 3;
+
+    &__top {
+        width: 100%;
+        background-color: $white;
+        padding: 20px 60px;
+        float: left;
+
+        &-social {
+            float: left;
+            margin-right: 105px;
+
+            li {
+                margin-right: 15px;
+                color: $text;
+                font-size: 14px;
+                line-height: 20px;
+
+                &:first-child {
+                    margin-right: 20px;
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                a {
+                    @include flex;
+                    height: 20px;
+
+                    .svg-ico {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        &-info, &-contact {
+            float: left;
+
+            li {
+                margin-right: 35px;
+
+                a {                    
+                    height: 20px;
+                    display: block;
+                    color: $text;
+                    font-size: 14px;
+                    text-transform: uppercase;
+
+                    .svg-ico {
+                        height: 20px;
+                        @include flex;
+                        margin-right: 10px;
+                        float: left;
+                    }
+                }
+            }
+        }
+
+        &-contact {
+            float: right;
+
+            li {
+                margin-right: 0;
+                                
+                a {
+                    text-transform: none;
+                }
+            }
+        } 
+
+        
+    }
+
+    &__bottom {
+        width: 100%;
+        max-width: 1320px;
+        margin: 0 auto;
+        padding: 40px 0 0;
+        clear: both;
+
+        .btn {
+            width: 220px;
+            height: 45px;
+            line-height: 45px;
+            float: right;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
     
+            .ico-ebanking {
+                height: 100%;
+                margin-right: 20px;
+                float: right;
+            }
+        }
+    }
+
+    &__logo {
+        float: left;
+        margin-right: 70px;
+        height: 45px;
+        @include flex;
+
+        a, .ico-logo {
+            display: block;
+        }
+
+    }
+
+    &__menu {
+        float: left;
+
+        li {
+            margin-right: 40px;
+
+            a {
+                color: $white;
+                font-size: 16px;
+                line-height: 45px;
+
+                .ico-down {
+                    margin-left: 10px;
+                    position: relative;
+                    top: -3px;
+                }
+            }
+            &.has-child {
+                position: relative;
+
+                .header__menu-dropdown {
+                    background: $white;
+                    width: 235px;
+                    position: absolute;
+                    padding: 0px 25px 0px;
+                    left: -30px;
+                    border: 1px solid #e5e5e5;
+                    border-top: none;
+                    border-bottom: 0px;
+                    overflow: hidden;
+                    max-height: 0;
+                    transition: .3s;
+                    box-shadow: inset 0 3px 0 0 $primary;
+                
+                    li {
+                        display: block;
+                        color: #333;
+                        text-transform: uppercase;
+                        line-height: 1.2em;
+                        margin-bottom: 10px;
+                   
+
+                        a {
+                            color: #7e8083;
+                            padding: 5px 0;
+                            text-transform: none;
+                            font-size: .875rem;
+                            line-height: 1.4em;
+                            display: block;
+
+                            &:hover {
+                                color: $primary;
+                            }
+                        }
+                    }
+                }
+
+                &.show-dropdown {
+                    .header__menu-dropdown {
+                        max-height: 600px;
+                        padding: 30px 25px 10px;
+                        border-bottom: 1px solid #e5e5e5;
+                    }
+                }
+            }
+        }
+    }
+
+    &__search {
+        height: 45px;
+        @include flex;
+        float: right;
+        margin-left: 45px;
+        cursor: pointer;
+    }
+
 }

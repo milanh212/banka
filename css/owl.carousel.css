@@ -218,30 +218,25 @@
 
 
 .owl-nav  {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    top: 50%;
-    z-index: 2;
-    padding: 0 10px;
+
+}
+.owl-next,
+.owl-prev {
+  width: 50px;
+  height: 50px;
+  font-size: 0;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
 }
 
-.owl-next {
-    background: url(../img/arrow-right-icon.svg) no-repeat center center;
-    width: 50px;
-    height: 50px;
-    font-size: 0;
-    float: right;
-    cursor: pointer;
-}
 .owl-prev {
-    background: url(../img/arrow-right-icon.svg) no-repeat center center;
-    width: 50px;
-    height: 50px;
-    transform: rotate(180deg);
-    font-size: 0;
-    float: left;
-    cursor: pointer;
+    background: url(../img/arrow-left.svg) no-repeat center center;
+    left: 60px;
+}
+.owl-next {
+    background: url(../img/arrow-right.svg) no-repeat center center;
+    right: 60px;
 }
 
 .disabled {display: none;}

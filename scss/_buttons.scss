@@ -1,0 +1,33 @@
+@import "colors";
+
+.btn {
+    transition: 0.3s;
+}
+
+.btn__rnd {
+    border-radius: 50px;
+}
+
+.btn__sqr {
+    border-radius: 4px;
+}
+
+.btn__primary {
+    background: $primary;
+    color: $white;
+
+    &:hover {
+        background: darken($primary, 10%);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+}
+
+.btn__white {
+    background: $white;
+    color: $primary;
+
+    &:hover {
+        background: darken($white, 10%);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+}
