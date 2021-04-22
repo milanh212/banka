@@ -24,7 +24,7 @@ $('.cover .owl-carousel').owlCarousel({
         // breakpoint from 0 up
         0 : {
             nav: false,
-            dots: true,
+            dots: false,
 
         },
         // breakpoint from 1200 up
@@ -60,7 +60,7 @@ $('.ebank__right .owl-carousel').owlCarousel({
     responsive : {
         // breakpoint from 0 up
         0 : {
-            nav: false,
+            nav: true,
             dots: true,
 
         },
@@ -113,12 +113,5 @@ $('.tab h4').on('click', function() {
 
 $('.tab .close').on('click', function() {
     $(this).closest(".tab").removeClass("tab__open");
-    return false;
-}); 
-
-// open menu
-
-$('.toggle-menu').on('click', function() {
-    $('body').toggleClass('menu-open');
     return false;
 }); 

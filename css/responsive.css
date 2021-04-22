@@ -1,0 +1,232 @@
+.mobile {
+  display: none; }
+
+@media screen and (max-width: 450px) {
+  .mobile {
+    display: block; }
+  .desktop {
+    display: none; }
+  .header {
+    top: 0; }
+    .header__top {
+      padding: 10px 15px; }
+      .header__top-social, .header__top-info {
+        display: none; }
+      .header__top-contact {
+        float: left; }
+    .header__bottom {
+      padding: 10px 0 0; }
+      .header__bottom .btn {
+        font-size: 0;
+        width: 50px;
+        height: 42px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        border-radius: 0; }
+        .header__bottom .btn .ico-ebanking {
+          margin-right: 15px; }
+    .header__logo {
+      margin: 0 0 0 15px; }
+      .header__logo .ico-logo {
+        max-height: 30px;
+        width: auto; }
+    .header__menu {
+      display: none; }
+    .header__search {
+      margin-left: auto;
+      margin-right: 15px; }
+  h1 {
+    font-size: 2rem; }
+  h2 {
+    font-size: 1.6rem; }
+  h3 {
+    font-size: 1.1rem; }
+  p {
+    font-size: 0.875rem; }
+  .cover__slide .slide-ctn {
+    padding: 0 35px; }
+    .cover__slide .slide-ctn p {
+      max-width: 100%;
+      font-size: 0.9rem; }
+  .special {
+    padding-bottom: 0; }
+    .special .wrapper {
+      padding: 0 30px; }
+    .special__item {
+      width: 100%;
+      margin-bottom: 25px; }
+      .special__item-top {
+        padding: 25px; }
+        .special__item-top p {
+          margin-bottom: 50px; }
+        .special__item-top .link {
+          left: 25px;
+          bottom: 50px; }
+  .benefits {
+    padding-bottom: 0; }
+    .benefits h2 {
+      margin: 50px 0 20px;
+      padding: 0 30px; }
+    .benefits p {
+      padding: 0 30px;
+      margin: 0 0 25px; }
+    .benefits__grid {
+      width: 100%;
+      float: left;
+      display: block;
+      border-bottom: 1px solid #e6e6e6; }
+      .benefits__grid-item {
+        background: #fafafa;
+        padding: 0 10px;
+        float: left;
+        border-top: 1px solid #e6e6e6; }
+        .benefits__grid-item-img {
+          background: transparent;
+          width: 75px;
+          height: 75px;
+          float: left;
+          border-radius: 0;
+          box-shadow: none;
+          border: none; }
+          .benefits__grid-item-img .ico-benefit {
+            width: auto;
+            height: 35px; }
+        .benefits__grid-item h4 {
+          margin: 0;
+          line-height: 75px;
+          text-align: left;
+          padding: 0 20px;
+          float: left; }
+        .benefits__grid-item p {
+          display: none; }
+  .video {
+    padding: 0 0 10px; }
+    .video .wrapper__big {
+      flex-direction: column-reverse; }
+    .video__right {
+      width: 100%;
+      padding: 30px 40px 40px;
+      color: #fff; }
+    .video__left {
+      width: 100%;
+      padding: 0 20px 20px; }
+  .ebank {
+    padding: 0; }
+    .ebank .wrapper__big {
+      flex-direction: column; }
+    .ebank__left {
+      width: 100%;
+      padding: 30px 40px; }
+    .ebank__right {
+      width: 100%;
+      padding: 20px 60px 40px; }
+      .ebank__right .owl-prev,
+      .ebank__right .owl-next {
+        margin-top: -50px; }
+  .magazin {
+    padding: 40px 0 0; }
+    .magazin h2 {
+      margin: 0 0 40px; }
+    .magazin__grid {
+      width: 100%;
+      display: block;
+      padding: 0 30px; }
+      .magazin__grid-item {
+        margin-bottom: 50px;
+        padding-bottom: 0; }
+      .magazin__grid h3 {
+        margin: 30px 0 15px; }
+      .magazin__grid p {
+        display: none; }
+      .magazin__grid .link {
+        position: relative; }
+  .form {
+    padding: 20px 0; }
+    .form .wrapper__small:first-child {
+      padding: 0 20px; }
+    .form form label {
+      margin-bottom: 30px;
+      font-size: 0.9rem; }
+      .form form label input {
+        font-size: 0.9rem; }
+    .form form .btn {
+      float: none;
+      margin: 0 auto;
+      position: relative;
+      left: 50%;
+      transform: translate3d(-50%, 0, 0); }
+  .tabela {
+    padding: 0 20px 40px; }
+    .tabela .tab h4 {
+      text-align: left; }
+    .tabela .tab h5 {
+      padding: 0;
+      text-align: left;
+      margin: 20px 0 30px; }
+    .tabela .tab .rows {
+      padding: 0; }
+    .tabela .tab .row {
+      padding: 0 10px; }
+      .tabela .tab .row-left {
+        max-width: 60%; }
+        .tabela .tab .row-left span {
+          padding: 10px 0;
+          line-height: 1.2em;
+          display: block; }
+      .tabela .tab .row-center span {
+        padding: 10px 0;
+        line-height: 1.2em;
+        display: block; }
+      .tabela .tab .row-right {
+        max-width: 40%; }
+        .tabela .tab .row-right span {
+          padding: 10px 0;
+          line-height: 1.2em;
+          display: block; }
+  footer::before {
+    display: none; }
+  footer .footer__top {
+    display: block; }
+    footer .footer__top-left, footer .footer__top-right {
+      width: 100%;
+      height: 235px; }
+  footer .footer__bottom .wrapper__big {
+    display: block; }
+  footer .footer__bottom .to__top {
+    display: none; }
+  footer .footer__bottom-a, footer .footer__bottom-b, footer .footer__bottom-c {
+    width: 100%;
+    display: block;
+    padding: 10px 50px;
+    margin: 0 auto; }
+  footer .footer__bottom-a {
+    background: url(../img/footer-bg.jpg) no-repeat left center/cover;
+    padding: 50px 30px;
+    margin-bottom: 40px; }
+  footer .footer__apps {
+    margin: 30px 0 360px; }
+    footer .footer__apps ul {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      padding: 0 30px; }
+  footer .footer__menu {
+    padding: 30px 0; }
+    footer .footer__menu .wrapper__big::before {
+      top: -30px;
+      height: 280px; }
+    footer .footer__menu .wrapper__big::after {
+      bottom: -150px; }
+    footer .footer__menu-nav {
+      width: 100%;
+      padding: 0 50px; }
+      footer .footer__menu-nav li {
+        width: 100%;
+        display: block; }
+        footer .footer__menu-nav li a {
+          padding: 10px;
+          margin: 0; }
+    footer .footer__menu-lang {
+      width: 100%;
+      padding: 0 50px; } }
