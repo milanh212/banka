@@ -1,3 +1,4 @@
+// hero slider 
 $('.cover .owl-carousel').owlCarousel({
     center: false,
     stagePadding: 0,
@@ -14,7 +15,7 @@ $('.cover .owl-carousel').owlCarousel({
     slideBy: 1,
 
     //Autoplay
-    autoplay: true,
+    autoplay: false,
     autoplayHoverPause: false,
 
     autoplaySpeed: 800,
@@ -35,6 +36,7 @@ $('.cover .owl-carousel').owlCarousel({
     }
 });
 
+// ebank carousel
 $('.ebank__right .owl-carousel').owlCarousel({
     center: true,
     stagePadding: 0,
@@ -72,14 +74,27 @@ $('.ebank__right .owl-carousel').owlCarousel({
     }
 });
 
+// show benefit description 
+$('.header__menu-btn').on('click', function() {
+    $(".header").toggleClass("main-menu__open");
+    $("main").toggleClass("hide");
+    $("footer").toggleClass("hide");
+    return false;
+}); 
+
 // menu dropdown
 $('.has-child a').click(function (e) {
     $(this).closest(".has-child").toggleClass("show-dropdown");
     e.preventDefault();
 }); 
 
-// count charachters
+// show benefit description 
+$('.benefits__grid-item-show').on('click', function() {
+    $(this).closest(".benefits__grid-item").toggleClass("benefits__open");
+    return false;
+}); 
 
+// count charachters email addres
 $('#email').keyup(function () {
     var max = 50;
     var len = $(this).val().length;
@@ -91,6 +106,7 @@ $('#email').keyup(function () {
     }
 });
 
+// count charachters textarea
 $('#message').keyup(function () {
     var max = 350;
     var len = $(this).val().length;
@@ -102,15 +118,13 @@ $('#message').keyup(function () {
     }
 });
 
-// open/close tab
-
+// open/close tab - tabela
 $('.tab h4').on('click', function() {
     $(this).closest(".tab").toggleClass("tab__open");
     return false;
 }); 
 
-// close tab
-
+// close tab - tabela
 $('.tab .close').on('click', function() {
     $(this).closest(".tab").removeClass("tab__open");
     return false;

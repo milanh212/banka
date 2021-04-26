@@ -34,7 +34,7 @@ gulp.task('sass', function() {
 
 
 gulp.task('cssmerge', function() {
-    return gulp.src(['css/general.css', 'css/header.css', 'css/main.css', 'css/footer.css', 'css/owl.carousel.css', 'css/modaal.css', 'css/responsive.css'])
+    return gulp.src(['css/general.css', 'css/header.css', 'css/main.css', 'css/footer.css', 'css/owl.carousel.css', 'css/responsive.css'])
     .pipe(cssnano({zindex: false}))
     .pipe(concat('style.min.css'))
     .pipe(gulp.dest('dist/css/'))
