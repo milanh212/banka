@@ -15,7 +15,7 @@ $('.cover .owl-carousel').owlCarousel({
     slideBy: 1,
 
     //Autoplay
-    autoplay: false,
+    autoplay: true,
     autoplayHoverPause: false,
 
     autoplaySpeed: 800,
