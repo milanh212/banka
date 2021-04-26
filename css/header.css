@@ -58,6 +58,7 @@
         margin-right: 35px; }
         .header__top-info li a, .header__top-contact li a {
           height: 20px;
+          line-height: 21px;
           display: block;
           color: #686b6e;
           font-size: 14px;
